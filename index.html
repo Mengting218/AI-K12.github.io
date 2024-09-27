@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>AI在美国K-12教育中的应用 / AI in U.S. K-12 Education</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="main-title">AI在美国K-12教育中的应用<br/>AI in U.S. K-12 Education</h1>
+        <div id="game">
+            <!-- 语言选择 -->
+            <div id="language-section">
+                <p>请选择语言 / Please select a language:</p>
+                <button class="lang-btn" data-lang="zh">中文</button>
+                <button class="lang-btn" data-lang="en">English</button>
+            </div>
+            <!-- 用户名输入 -->
+            <div id="username-section" style="display:none;">
+                <label for="username" id="enterUsername">请输入用户名：</label>
+                <input type="text" id="username" required>
+                <button id="username-btn">下一步</button>
+            </div>
+            <!-- 角色选择 -->
+            <div id="role-section" style="display:none;">
+                <p id="choose-role">请选择角色：</p>
+                <button class="role-btn" data-role="teacher"></button>
+                <button class="role-btn" data-role="student"></button>
+            </div>
+            <!-- 题目显示 -->
+            <div id="question-section" style="display:none;">
+                <p id="progress"></p>
+                <p id="difficulty"></p>
+                <p id="question-text"></p>
+                <div id="options"></div>
+                <button id="submit-btn"></button>
+                <p id="feedback"></p>
+            </div>
+            <!-- 报告显示 -->
+            <div id="report-section" style="display:none;">
+                <h2></h2>
+                <p id="report"></p>
+                <button id="restart-btn"></button>
+            </div>
+            <!-- 排行榜显示 -->
+            <div id="scores-section" style="display:none;">
+                <h2 id="scores-title"></h2>
+                <ul id="scores-list"></ul>
+                <button id="back-btn"></button>
+            </div>
+            <!-- 查看排行榜按钮 -->
+            <button id="show-scores-btn" style="display:none;"></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+/* styles.css */
+
+body {
+    background-color: #000814;
+    color: #fff;
+    font-family: 'Microsoft YaHei', 'Arial', sans-serif;
+    background-image: radial-gradient(circle at top left, #001D3D, #000814);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #00A6FB;
+    text-shadow: 0 0 10px #00A6FB;
+    text-align: center;
+}
+
+#game {
+    background: rgba(0, 10, 30, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #00A6FB;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 50%;
+    margin-bottom: 20px;
+    border: 1px solid #00A6FB;
+    border-radius: 5px;
+    background-color: #001D3D;
+    color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #003566;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00A6FB;
+}
+
+#feedback {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#report-section h2,
+#scores-section h2 {
+    margin-bottom: 20px;
+}
+
+#report,
+#scores-list {
+    text-align: left;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.role-btn, .lang-btn {
+    width: 120px;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option-btn {
+    width: 60%;
+    margin: 5px 0;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.option-btn.selected {
+    background-color: #00A6FB;
+}
+
+#show-scores-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    text-align: center;
+}
+
+#scores-section {
+    padding: 20px;
+}
+
+#scores-list li {
+    margin-bottom: 10px;
+}
+
+/* 针对中文和英文的特定样式 */
+body.zh {
+    font-family: 'Microsoft YaHei', 'Arial', sans-serif;
+}
+
+body.en {
+    font-family: 'Arial', sans-serif;
+}
